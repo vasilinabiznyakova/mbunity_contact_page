@@ -1,0 +1,94 @@
+@import-normalize;
+
+@font-face {
+  font-family: 'Poppins400';
+  src: local('Poppins400'),
+    url('./fonts/Poppins/Poppins-Regular.ttf') format('truetype');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Poppins500';
+  src: local('Poppins500'),
+    url('./fonts/Poppins/Poppins-Medium.ttf') format('truetype');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Poppins600';
+  src: local('Poppins600'),
+    url('./fonts/Poppins/Poppins-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'Poppins700';
+  src: local('Poppins700'),
+    url('./fonts/Poppins/Poppins-Bold.ttf') format('truetype');
+  font-weight: 700;
+}
+
+
+@font-face {
+  font-family: 'Roboto400';
+  src: local('Roboto400'),
+    url('./fonts/Roboto/Roboto-Regular.ttf') format('truetype');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Roboto700';
+  src: local('Roboto700'),
+    url('./fonts/Roboto/Roboto-Bold.ttf') format('truetype');
+  font-weight: 700;
+}
+
+
+@font-face {
+  font-family: 'Inter800';
+  src: local('Inter800'),
+    url('./fonts/Inter/Inter-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+}
+
+
+@font-face {
+  font-family: 'Inter500';
+  src: local('Inter500'),
+    url('./fonts/Inter/Inter-Medium.ttf') format('truetype');
+  font-weight: 500;
+}
+
+
+@font-face {
+  font-family: 'Manrope500';
+  src: local('Manrope500'),
+    url('./fonts/Manrope/Manrope-Medium.ttf') format('truetype');
+  font-weight: 500;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
