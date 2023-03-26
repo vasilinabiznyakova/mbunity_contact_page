@@ -1,11 +1,27 @@
+import { Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import Features from "./pages/Features";
+import Blog from "./pages/Blog";
+import Shop from "./pages/Shop";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
+import NotFound from "./pages/NotFound";
 
-
-function App() {
+export const App = () => {
   return (
     <div>
-      <p>Here will be Contact page</p>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/features" element={<Features />} />
+        <Route path="/blog" element={<Blog />} />
+        <Route path="/shop" element={<Shop />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/user" element={<p>content of user page</p>} />
+        <Route path="/cart" element={<p>content of cart page</p>} />
+
+        <Route path="*" element={<NotFound />} />
+      </Routes>
     </div>
   );
-}
-
-export default App;
+};
