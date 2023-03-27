@@ -1,4 +1,6 @@
 import { useState } from "react";
+import { useMediaQuery } from "react-responsive";
+
 import { Navigation } from "../Navigation/Navigation";
 import { HeaderBtn } from "../BurgerBtn/BurgerBtn";
 import { HeaderEl, Wrapper, Logo } from "./Header.styled";
@@ -10,6 +12,8 @@ export const Header = () => {
     setNavbarOpen((prev) => !prev);
   };
 
+  const isDesktop = useMediaQuery({ query: "(min-width: 1440px)" });
+
   return (
     <HeaderEl navbarOpen={navbarOpen}>
       <Wrapper>
@@ -18,7 +22,7 @@ export const Header = () => {
         </Logo>
         <HeaderBtn navbarOpen={navbarOpen} handleClick={handleClick} />
       </Wrapper>
-      {navbarOpen ? <Navigation /> : null}
+      {navbarOpen || isDesktop ? <Navigation isDesktop={isDesktop} /> : null}
     </HeaderEl>
   );
 };

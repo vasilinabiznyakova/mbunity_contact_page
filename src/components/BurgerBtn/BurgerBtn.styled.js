@@ -5,4 +5,8 @@ export const BurgerBtn = styled.button`
   padding: 0;
   border: none;
   background: none;
+
+  @media screen and (min-width: 1440px) {
+    display: none;
+  }
 `;

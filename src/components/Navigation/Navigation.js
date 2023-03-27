@@ -1,4 +1,5 @@
 import userLogo from "../../img/header/user.png";
+import userLogoDesktop from "../../img/header/user_desktop.png";
 
 import {
   Nav,
@@ -14,7 +15,7 @@ import {
   CartLogo,
 } from "./Navigation.styled";
 
-export const Navigation = () => {
+export const Navigation = ({ isDesktop }) => {
   return (
     <Nav>
       <MenuList>
@@ -45,7 +46,10 @@ export const Navigation = () => {
       <UserIList>
         <UserIListItem>
           <NavItem to="/user">
-            <UserImg src={userLogo} alt="user logo" />
+            <UserImg
+              src={isDesktop ? userLogoDesktop : userLogo}
+              alt="user logo"
+            />
           </NavItem>
         </UserIListItem>
         <UserIListItem>
