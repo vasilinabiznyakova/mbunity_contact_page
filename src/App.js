@@ -4,7 +4,7 @@ import Features from "./pages/Features";
 import Blog from "./pages/Blog";
 import Shop from "./pages/Shop";
 import About from "./pages/About";
-import Contact from "./pages/Contact";
+import Contact from "./pages/Contact/Contact";
 import NotFound from "./pages/NotFound";
 
 export const App = () => {

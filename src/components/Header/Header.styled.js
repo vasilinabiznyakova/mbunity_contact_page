@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 export const HeaderEl = styled.header`
   padding: 28px 20px 30px;
   box-shadow: 0px -2px 4px rgba(0, 0, 0, 0.25);
-  background: ${(props) => (props.navbarOpen ? "#000000" : "#fbfbfb")};
+  background: ${(props) => (props.navbarOpen ? "#000000" : "#F5F5F5")};
 
   @media screen and (min-width: 1440px) {
     display: flex;
@@ -12,7 +12,6 @@ export const HeaderEl = styled.header`
     margin-bottom: 74px;
     padding: 40px 100px 0px;
     box-shadow: none;
-    background: #f5f5f5;
   }
 `;
 
