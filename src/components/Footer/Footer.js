@@ -5,7 +5,9 @@ export const Footer = () => {
   return (
     <FooterWrapper>
       <div>Logo Here</div>
-      <GeneralInquiryList />
+      <div>
+        <GeneralInquiryList />
+      </div>
     </FooterWrapper>
   );
 };
