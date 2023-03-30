@@ -18,14 +18,14 @@ export const FooterLogo = styled.a`
   font-size: 36px;
   line-height: 1.22;
   color: #ffffff;
-
-  &::before {
+  &::after {
+    content: "";
     position: absolute;
     display: block;
     height: 2px;
     width: 100%;
     background: white;
-    transform: translateY(28px);
+    transform: translateY(20px);
   }
 `;
 
