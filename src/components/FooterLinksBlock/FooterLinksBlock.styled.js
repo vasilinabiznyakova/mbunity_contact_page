@@ -7,3 +7,9 @@ export const FooterTitle = styled.h2`
   line-height: 1.62;
   color: #ffffff;
 `;
+
+export const WrapperFooterLinkBlock = styled.div`
+  &:first-child {
+    width: 143px;
+  }
+`;

@@ -1,6 +1,13 @@
-import { Field, Form, Formik } from "formik";
+import { Formik } from "formik";
 import { SubscribtionFormSchema } from "../../Validation/SubscribtionFormSchema";
 import { FormError } from "../FormError/FormError";
+import {
+  FormTitle,
+  FormField,
+  FormWrapper,
+  SubscrBtn,
+  SubsrInfo,
+} from "./SubscriptionForm.styled";
 
 export const SubscriptionForm = () => {
   const initialValues = {
@@ -19,16 +26,18 @@ export const SubscriptionForm = () => {
       validationSchema={SubscribtionFormSchema}
     >
       {({ errors, touched }) => (
-        <Form>
+        <FormWrapper>
           <label>
-            <span>Join Our Newsletter</span>
-            <Field name="subscription" />
-            <FormError name="subscription" />
+            <FormTitle>Join Our Newsletter</FormTitle>
+            <FormField name="subscription" placeholder="Your email address" />
           </label>
 
-          <button type="submit">Subscribe</button>
-          <p>* Will send you weekly updates for your better tool management.</p>
-        </Form>
+          <SubscrBtn type="submit">Subscribe</SubscrBtn>
+          <SubsrInfo>
+            * Will send you weekly updates for your better tool management.
+          </SubsrInfo>
+          <FormError name="subscription" />
+        </FormWrapper>
       )}
     </Formik>
   );

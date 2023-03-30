@@ -2,7 +2,10 @@ import styled from "styled-components";
 
 export const FooterWrapper = styled.footer`
   background: #000000;
-  padding: 20px 20px 35px;
+  padding: 20px 20px 50px;
+  &:first-child {
+    margin-right: 96px;
+  }
 `;
 
 export const FooterLogo = styled.a`
@@ -24,4 +27,16 @@ export const FooterLogo = styled.a`
     background: white;
     transform: translateY(28px);
   }
+`;
+
+export const FlexWrap = styled.div`
+  display: flex;
+  justify-content: space-between;
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
+`;
+
+export const LinksContainer = styled.div`
+  margin-bottom: 40px;
 `;

@@ -42,7 +42,7 @@ export const FormField = styled(Field)`
   padding-top: 4px;
   padding-bottom: 12px;
   border: none;
-  border-bottom: 1px solid #8d8d8d;
+  border-bottom: 2px solid #8d8d8d;
   font-family: "Poppins500";
   font-size: 14px;
   line-height: 1.43;
@@ -55,6 +55,7 @@ export const FormField = styled(Field)`
     color: #000000;
     outline: 0;
     outline-offset: 0;
+    border-bottom: 2px solid #000000;
   }
 
   &::placeholder {

@@ -1,14 +1,16 @@
-export const FooterList = ({ content, children }) => {
+import { IconWrapper, List, Link, ListItem } from "./FooterList.styled";
+
+export const FooterList = ({ content, width, children }) => {
   return (
-    <ul>
+    <List width={width}>
       {content.map((el) => (
-        <li key={el.id}>
-          <a href={el.link}>
-            <span> {el.icon}</span>
+        <ListItem key={el.id}>
+          <Link href={el.link}>
+            <IconWrapper> {el.icon}</IconWrapper>
             <p>{el.description}</p>
-          </a>
-        </li>
+          </Link>
+        </ListItem>
       ))}
-    </ul>
+    </List>
   );
 };
