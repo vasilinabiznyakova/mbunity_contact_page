@@ -41,7 +41,7 @@ export const ContactForm = () => {
                 First Name
               </TextLabel>
 
-              <FormField name="firstName" autoFocus={true} />
+              <FormField name="firstName" />
               <FormError name="firstName" />
             </Label>
 
@@ -78,7 +78,7 @@ export const ContactForm = () => {
             <FormError name="picked" />
 
             <Label>
-              <TextLabel>Email</TextLabel>
+              <TextLabel>Message</TextLabel>
               <FormField name="message" placeholder="Write your message.." />
               <FormError name="message" />
             </Label>

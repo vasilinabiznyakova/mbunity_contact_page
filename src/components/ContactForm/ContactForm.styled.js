@@ -24,7 +24,7 @@ export const FormWrapper = styled(Form)`
 
   &::before {
     content: "";
-    bottom: 14px;
+    bottom: 0;
     left: 62px;
     position: absolute;
     width: 104px;
@@ -32,7 +32,7 @@ export const FormWrapper = styled(Form)`
     background-image: url(${send_bg});
     background-repeat: no-repeat;
     background-size: cover;
-    transform: rotate(-18deg);
+    transform: rotate(-29deg);
   }
 `;
 

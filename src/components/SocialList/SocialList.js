@@ -2,7 +2,6 @@ import {
   GeneralSocialList,
   GeneralSocialListItem,
   GeneralSocialListLink,
-  LogoWrapper,
 } from "./SocialList.styled";
 
 import { ReactComponent as TwitterLogo } from "../../img/contact_sect/twitter.svg";
@@ -13,23 +12,20 @@ export const SocialList = () => {
   return (
     <GeneralSocialList>
       <GeneralSocialListItem>
-        <LogoWrapper>
-          <GeneralSocialListLink href="/">
-            <TwitterLogo />
-          </GeneralSocialListLink>
-        </LogoWrapper>
+        <GeneralSocialListLink href="/">
+          <TwitterLogo />
+        </GeneralSocialListLink>
       </GeneralSocialListItem>
+
       <GeneralSocialListItem>
         <GeneralSocialListLink href="/">
           <InstagramLogo />
         </GeneralSocialListLink>
       </GeneralSocialListItem>
       <GeneralSocialListItem>
-        <LogoWrapper>
-          <GeneralSocialListLink href="/">
-            <DiscordLogo />
-          </GeneralSocialListLink>
-        </LogoWrapper>
+        <GeneralSocialListLink href="/">
+          <DiscordLogo />
+        </GeneralSocialListLink>
       </GeneralSocialListItem>
     </GeneralSocialList>
   );

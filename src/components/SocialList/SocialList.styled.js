@@ -19,17 +19,23 @@ export const GeneralSocialListLink = styled.a`
   height: 30px;
   border-radius: 50%;
   background-color: #262626;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  svg {
+    fill: #ffffff;
+  }
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover,
   &:focus {
     background-color: #ffffff;
+    svg {
+      fill: #000000;
+    }
   }
 `;
 
-export const LogoWrapper = styled.div`
-  &:hover,
-  &:focus {
-    stroke: #000000;
-  }
-`;
+// export const LogoWrapper = styled.div`
+//   &:hover,
+//   &:focus {
+//     stroke: #000000;
+//   }
+// `;

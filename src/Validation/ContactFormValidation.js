@@ -21,7 +21,7 @@ export const contactFormSchema = yup.object().shape({
     .max(63, "Your email should be less than 63 digits")
     .email("Please enter a valid email")
     .matches(emailRules, "Please enter a valid email")
-    .matches(emailRules2, "Only latin characters are allowed!")
+    .matches(emailRules2, "Please enter a valid email")
     .required("Email is required"),
   phone: yup
     .string()
