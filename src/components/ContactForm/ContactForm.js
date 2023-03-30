@@ -11,6 +11,8 @@ import {
   RadioTitle,
   RadioWrapper,
   Button,
+  InputWrapper,
+  FormArticle,
 } from "./ContactForm.styled";
 
 const initialValues = {
@@ -28,7 +30,7 @@ export const ContactForm = () => {
   };
 
   return (
-    <article>
+    <FormArticle>
       <Formik
         initialValues={initialValues}
         onSubmit={handleSubmit}
@@ -36,37 +38,38 @@ export const ContactForm = () => {
       >
         {({ errors, touched }) => (
           <FormWrapper>
-            <Label>
-              <TextLabel mark={touched.firstName ? true : false}>
-                First Name
-              </TextLabel>
+            <InputWrapper>
+              <Label>
+                <TextLabel mark={touched.firstName ? true : false}>
+                  First Name
+                </TextLabel>
 
-              <FormField name="firstName" />
-              <FormError name="firstName" />
-            </Label>
+                <FormField name="firstName" />
+                <FormError name="firstName" />
+              </Label>
 
-            <Label>
-              <TextLabel mark={touched.lastName ? true : false}>
-                Last Name
-              </TextLabel>
-              <FormField name="lastName" />
-              <FormError name="lastName" />
-            </Label>
+              <Label>
+                <TextLabel mark={touched.lastName ? true : false}>
+                  Last Name
+                </TextLabel>
+                <FormField name="lastName" />
+                <FormError name="lastName" />
+              </Label>
 
-            <Label>
-              <TextLabel mark={touched.email ? true : false}>Email</TextLabel>
-              <FormField name="email" />
-              <FormError name="email" />
-            </Label>
+              <Label>
+                <TextLabel mark={touched.email ? true : false}>Email</TextLabel>
+                <FormField name="email" />
+                <FormError name="email" />
+              </Label>
 
-            <Label>
-              <TextLabel mark={touched.phone ? true : false}>
-                Phone Number
-              </TextLabel>
-              <FormField name="phone" />
-              <FormError name="phone" />
-            </Label>
-
+              <Label>
+                <TextLabel mark={touched.phone ? true : false}>
+                  Phone Number
+                </TextLabel>
+                <FormField name="phone" />
+                <FormError name="phone" />
+              </Label>
+            </InputWrapper>
             <RadioTitle>Select Subject?</RadioTitle>
 
             <RadioWrapper role="group" aria-labelledby="my-radio-group">
@@ -87,6 +90,6 @@ export const ContactForm = () => {
           </FormWrapper>
         )}
       </Formik>
-    </article>
+    </FormArticle>
   );
 };

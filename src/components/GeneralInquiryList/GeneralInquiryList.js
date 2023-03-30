@@ -25,7 +25,10 @@ export const GeneralInquiryList = () => {
       </GeneralInquiryListItem>
       <GeneralInquiryListItem>
         <InquiryLink href="https://goo.gl/maps/d11NtAn3ZEPw3yCM6">
-          <LocationIcon />
+          <span>
+            <LocationIcon />
+          </span>
+
           <InquiryDescr>
             132 Dartmouth Street Boston, Massachusetts 02156 United States
           </InquiryDescr>

@@ -1,15 +1,19 @@
 import styled from "styled-components";
 import el1 from "../../img/contact_sect/ellipse_big.svg";
 import el2 from "../../img/contact_sect/ellipse_small.svg";
-
+import el1_desk from "../../img/contact_sect/ellipse_desk_big.svg";
+import el2_desk from "../../img/contact_sect/ellipse_desk_small.svg";
 
 export const Article = styled.article`
   position: relative;
   background: #ffffff;
-
   box-shadow: 0px 0px 60px 30px rgba(0, 0, 0, 0.03);
   border-radius: 5px;
 
+  @media screen and (min-width: 1440px) {
+    display: flex;
+    padding: 10px 50px 10px 10px;
+  }
 `;
 
 export const Wrapper = styled.div`
@@ -24,6 +28,19 @@ export const Wrapper = styled.div`
   background-image: url(${el2}), url(${el1});
   background-repeat: no-repeat;
   background-position: right 26px bottom 52px, right bottom;
+
+  @media screen and (min-width: 1440px) {
+    width: 492px;
+    margin-bottom: 0;
+    margin-left: 0;
+    padding-right: 114px;
+    padding-left: 40px;
+    margin-right: 50px;
+    padding-top: 40px;
+    padding-bottom: 36px;
+    background-image: url(${el2_desk}), url(${el1_desk});
+    background-position: right 70px bottom 70px, right bottom;
+  }
 `;
 
 export const InquiryText = styled.p`
@@ -33,6 +50,12 @@ export const InquiryText = styled.p`
   font-size: 11px;
   line-height: 1.5;
   color: #c9c9c9;
+
+  @media screen and (min-width: 1440px) {
+    font-size: 18px;
+    text-align: left;
+    margin-bottom: 111px;
+  }
 `;
 
 export const InquiryTitle = styled.h2`
@@ -42,4 +65,9 @@ export const InquiryTitle = styled.h2`
   font-size: 20px;
   line-height: 1.5;
   color: #ffffff;
+
+  @media screen and (min-width: 1440px) {
+    font-size: 28px;
+    text-align: left;
+  }
 `;

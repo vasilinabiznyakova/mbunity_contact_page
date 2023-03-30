@@ -3,6 +3,10 @@ import styled from "styled-components";
 export const GeneralSocialList = styled.ul`
   display: flex;
   justify-content: center;
+
+  @media screen and (min-width: 1440px) {
+    justify-content: normal;
+  }
 `;
 
 export const GeneralSocialListItem = styled.li`
@@ -32,10 +36,3 @@ export const GeneralSocialListLink = styled.a`
     }
   }
 `;
-
-// export const LogoWrapper = styled.div`
-//   &:hover,
-//   &:focus {
-//     stroke: #000000;
-//   }
-// `;
