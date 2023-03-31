@@ -4,7 +4,6 @@ export const FooterWrapper = styled.footer`
   background: #000000;
   padding: 20px 20px 50px;
   &:first-child {
-  
     @media screen and (min-width: 1440px) {
       margin-right: 0;
     }
@@ -46,33 +45,33 @@ export const FooterLogo = styled.a`
 export const FlexWrap = styled.div`
   display: flex;
   justify-content: space-between;
-  &:not(:last-child) {
+  &:first-child {
     margin-bottom: 30px;
-    @media screen and (min-width: 1440px) {
-      margin-bottom: 0;
-     
-    }
   }
 
   @media screen and (min-width: 1440px) {
     justify-content: flex-start;
     &:last-child {
-      margin-right: 110px;
+      margin-right: 96;
     }
   }
 `;
 
 export const LinksContainer = styled.div`
-  margin-bottom: 40px;
   @media screen and (min-width: 1440px) {
     display: flex;
-    margin-bottom: 0;
   }
 `;
 
 export const DeskTopContainer = styled.div`
+@media screen and (min-width: 1440px) {
+  display: flex;}
+`;
+
+
+export const WrapList = styled.div`
+  margin-right: ${(props) => (props.title === "legal" ? "118px" : null)};
   @media screen and (min-width: 1440px) {
-    display: flex;
-    justify-content: space-between;
+    margin-right: 0;
   }
 `;

@@ -9,21 +9,11 @@ export const FooterTitle = styled.h2`
 `;
 
 export const WrapperFooterLinkBlock = styled.div`
-  &:first-child {
-    width: 143px;
-
-    @media screen and (min-width: 1440px) {
-      width: ${(props) => (props.title === "Reach us" ? "331px" : null)};
-
-      margin-right: ${(props) =>
-        props.title === "Reach us" ? "48px" : "60px"};
-    }
-  }
-
-  &:not(:first-child) {
-    width: 143px;
-    @media screen and (min-width: 1440px) {
-      margin-right: ${(props) => (props.title === "Company" ? "60px" : null)};
-    }
+  @media screen and (min-width: 1440px) {
+    width: ${(props) => (props.title === "Reach us" ? "331px" : null)};
+    margin-right: ${(props) => (props.title === "Reach us" ? "60px" : null)};
+    margin-right: ${(props) => (props.title === "Company" ? "60px" : null)};
+    margin-right: ${(props) => (props.title === "Legal" ? "60px" : null)};
+    margin-right: ${(props) => (props.title === "Quick Links" ? "96px" : null)};
   }
 `;

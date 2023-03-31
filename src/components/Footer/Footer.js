@@ -3,6 +3,7 @@ import {
   FooterLogo,
   FlexWrap,
   LinksContainer,
+  WrapList,
   DeskTopContainer,
 } from "../Footer/Footer.styled";
 import { FooterLinksBlock } from "../FooterLinksBlock/FooterLinksBlock";
@@ -17,21 +18,28 @@ export const Footer = () => {
       <DeskTopContainer>
         <LinksContainer>
           <FlexWrap>
-            <FooterLinksBlock title="Reach us" mbtn="16">
-              <FooterList content={reachUs} mark="reachUs" />
-            </FooterLinksBlock>
-            <FooterLinksBlock title="Company" mbtn="20">
-              <FooterList content={company} />
-            </FooterLinksBlock>
+            <WrapList>
+              <FooterLinksBlock title="Reach us" mbtn="16">
+                <FooterList content={reachUs} mark="reachUs" />
+              </FooterLinksBlock>
+            </WrapList>
+            <WrapList>
+              <FooterLinksBlock title="Company" mbtn="20">
+                <FooterList content={company} />
+              </FooterLinksBlock>
+            </WrapList>
           </FlexWrap>
           <FlexWrap>
-            <FooterLinksBlock title="Legal" mbtn="20">
-              <FooterList content={legal} />
-            </FooterLinksBlock>
-
-            <FooterLinksBlock title="Quick Links" mark="quickLinks" mbtn="20">
-              <FooterList content={quickLinks} />
-            </FooterLinksBlock>
+            <WrapList title="legal">
+              <FooterLinksBlock title="Legal" mbtn="20">
+                <FooterList content={legal} />
+              </FooterLinksBlock>
+            </WrapList>
+            <WrapList>
+              <FooterLinksBlock title="Quick Links" mark="quickLinks" mbtn="20">
+                <FooterList content={quickLinks} />
+              </FooterLinksBlock>
+            </WrapList>
           </FlexWrap>
         </LinksContainer>
         <SubscriptionForm />

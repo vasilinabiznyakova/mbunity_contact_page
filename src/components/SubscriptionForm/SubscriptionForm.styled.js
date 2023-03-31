@@ -11,7 +11,7 @@ export const FormTitle = styled.b`
 
   @media screen and (min-width: 1440px) {
     font-size: 18px;
-    margin-bottom: 2px;
+    margin-bottom: 29px;
   }
 `;
 
@@ -53,6 +53,7 @@ export const FormWrapper = styled(Form)`
   @media screen and (min-width: 1440px) {
     padding: 14px 12px 20px 14px;
     width: 304px;
+    height: 184px;
   }
 `;
 
