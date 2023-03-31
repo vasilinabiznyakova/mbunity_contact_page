@@ -7,7 +7,7 @@ import { App } from "./App";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <BrowserRouter basename="mbunity-contact-page">
+    <BrowserRouter basename="mbunity_contact_page">
       <App />
     </BrowserRouter>
   </React.StrictMode>
