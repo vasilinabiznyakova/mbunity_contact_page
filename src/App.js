@@ -11,12 +11,12 @@ export const App = () => {
   return (
     <div>
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/home" element={<Home />} />
         <Route path="/features" element={<Features />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/shop" element={<Shop />} />
         <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} />
+        <Route index element={<Contact />} />
         <Route path="/user" element={<p>content of user page</p>} />
         <Route path="/cart" element={<p>content of cart page</p>} />
 
