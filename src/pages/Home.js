@@ -4,7 +4,7 @@ const Home = () => {
   return (
     <>
       <Header />
-      <p>Here will be content of Home page</p>;
+      <p>here content of Home page will be </p>
     </>
   );
 };
