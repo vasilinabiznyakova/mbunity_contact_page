@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/mbunity_contact_page/static/css/main.1e19d616.css",
-    "main.js": "/mbunity_contact_page/static/js/main.2392fb41.js",
+    "main.js": "/mbunity_contact_page/static/js/main.fa000a6d.js",
     "static/media/Inter-ExtraBold.ttf": "/mbunity_contact_page/static/media/Inter-ExtraBold.e4a4cb7133001f282a15.ttf",
     "static/media/Inter-Medium.ttf": "/mbunity_contact_page/static/media/Inter-Medium.6dcbc9bed1ec438907ee.ttf",
     "static/media/Roboto-Regular.ttf": "/mbunity_contact_page/static/media/Roboto-Regular.fc2b5060f7accec5cf74.ttf",
@@ -31,10 +31,10 @@
     "static/media/ellipse_desk_big.svg": "/mbunity_contact_page/static/media/ellipse_desk_big.847378fbde4b6beea92111d9e20f55ed.svg",
     "static/media/ellipse_big.svg": "/mbunity_contact_page/static/media/ellipse_big.d06c7621c1e4b7baa8536b30dd63d91e.svg",
     "main.1e19d616.css.map": "/mbunity_contact_page/static/css/main.1e19d616.css.map",
-    "main.2392fb41.js.map": "/mbunity_contact_page/static/js/main.2392fb41.js.map"
+    "main.fa000a6d.js.map": "/mbunity_contact_page/static/js/main.fa000a6d.js.map"
   },
   "entrypoints": [
     "static/css/main.1e19d616.css",
-    "static/js/main.2392fb41.js"
+    "static/js/main.fa000a6d.js"
   ]
 }
