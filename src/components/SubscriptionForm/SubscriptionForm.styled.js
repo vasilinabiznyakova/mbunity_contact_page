@@ -8,6 +8,11 @@ export const FormTitle = styled.b`
   font-size: 16px;
   line-height: 1.62;
   color: #ffffff;
+
+  @media screen and (min-width: 1440px) {
+    font-size: 18px;
+    margin-bottom: 2px;
+  }
 `;
 
 export const FormField = styled(Field)`
@@ -35,12 +40,20 @@ export const FormField = styled(Field)`
     line-height: 1.5;
     color: #8d8d8d;
   }
+
+  @media screen and (min-width: 1440px) {
+    width: 172px;
+  }
 `;
 
 export const FormWrapper = styled(Form)`
   padding: 16px 28px 14px 14px;
   background: #0d0d0d;
   border-radius: 5px;
+  @media screen and (min-width: 1440px) {
+    padding: 14px 12px 20px 14px;
+    width: 304px;
+  }
 `;
 
 export const SubscrBtn = styled.button`
@@ -54,6 +67,10 @@ export const SubscrBtn = styled.button`
   font-size: 12px;
   line-height: 1.5;
   color: #ffffff;
+
+  @media screen and (min-width: 1440px) {
+    width: 105px;
+  }
 `;
 
 export const SubsrInfo = styled.p`

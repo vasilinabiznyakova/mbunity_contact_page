@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { Field, Form } from "formik";
-import send_bg from "../../img/contact_sect/letter_send.png";
-// import send_bg_desk from "../../img/contact_sect/send_bg_desk.png";
+
+
 
 export const Label = styled.label`
   display: block;
@@ -26,23 +26,6 @@ export const FormWrapper = styled(Form)`
   margin-left: auto;
   margin-right: auto;
 
-  &::after {
-    content: "";
-    bottom: 0;
-    left: 62px;
-    position: absolute;
-    width: 104px;
-    height: 56px;
-    background-image: url(${send_bg});
-    background-repeat: no-repeat;
-    background-size: cover;
-    transform: rotate(-29deg);
-
-    @media screen and (min-width: 1440px) {
-      width: 240px;
-      height: 112px;
-    }
-  }
 
   @media screen and (min-width: 1440px) {
     width: auto;

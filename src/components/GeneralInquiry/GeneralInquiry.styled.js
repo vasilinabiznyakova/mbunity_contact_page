@@ -3,6 +3,8 @@ import el1 from "../../img/contact_sect/ellipse_big.svg";
 import el2 from "../../img/contact_sect/ellipse_small.svg";
 import el1_desk from "../../img/contact_sect/ellipse_desk_big.svg";
 import el2_desk from "../../img/contact_sect/ellipse_desk_small.svg";
+import send_bg from "../../img/contact_sect/letter_send.png";
+import send_bg_desk from "../../img/contact_sect/send_bg_desk.png";
 
 export const Article = styled.article`
   position: relative;
@@ -11,8 +13,32 @@ export const Article = styled.article`
   border-radius: 5px;
 
   @media screen and (min-width: 1440px) {
+    max-width: 1440px;
     display: flex;
     padding: 10px 50px 10px 10px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: calc(50% - 62px);
+    bottom: 0;
+    width: 104px;
+    height: 56px;
+    background-image: url(${send_bg});
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform: rotate(-29deg);
+
+    @media screen and (min-width: 1440px) {
+      width: 240px;
+      height: 112px;
+      bottom: 14px;
+      left: 797px;
+      background-image: url(${send_bg_desk});
+    }
   }
 `;
 
