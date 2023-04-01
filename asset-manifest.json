@@ -1,7 +1,14 @@
 {
   "files": {
     "main.css": "/mbunity_contact_page/static/css/main.1e19d616.css",
-    "main.js": "/mbunity_contact_page/static/js/main.8cb9cd5f.js",
+    "main.js": "/mbunity_contact_page/static/js/main.c9025ed9.js",
+    "static/js/266.288406cc.chunk.js": "/mbunity_contact_page/static/js/266.288406cc.chunk.js",
+    "static/js/753.6f63076a.chunk.js": "/mbunity_contact_page/static/js/753.6f63076a.chunk.js",
+    "static/js/250.34de7bcd.chunk.js": "/mbunity_contact_page/static/js/250.34de7bcd.chunk.js",
+    "static/js/10.a4ed97ff.chunk.js": "/mbunity_contact_page/static/js/10.a4ed97ff.chunk.js",
+    "static/js/964.a743b684.chunk.js": "/mbunity_contact_page/static/js/964.a743b684.chunk.js",
+    "static/js/663.f5905ce1.chunk.js": "/mbunity_contact_page/static/js/663.f5905ce1.chunk.js",
+    "static/js/922.994ebba0.chunk.js": "/mbunity_contact_page/static/js/922.994ebba0.chunk.js",
     "static/media/Inter-ExtraBold.ttf": "/mbunity_contact_page/static/media/Inter-ExtraBold.e4a4cb7133001f282a15.ttf",
     "static/media/Inter-Medium.ttf": "/mbunity_contact_page/static/media/Inter-Medium.6dcbc9bed1ec438907ee.ttf",
     "static/media/Roboto-Regular.ttf": "/mbunity_contact_page/static/media/Roboto-Regular.fc2b5060f7accec5cf74.ttf",
@@ -31,10 +38,17 @@
     "static/media/ellipse_desk_big.svg": "/mbunity_contact_page/static/media/ellipse_desk_big.847378fbde4b6beea92111d9e20f55ed.svg",
     "static/media/ellipse_big.svg": "/mbunity_contact_page/static/media/ellipse_big.d06c7621c1e4b7baa8536b30dd63d91e.svg",
     "main.1e19d616.css.map": "/mbunity_contact_page/static/css/main.1e19d616.css.map",
-    "main.8cb9cd5f.js.map": "/mbunity_contact_page/static/js/main.8cb9cd5f.js.map"
+    "main.c9025ed9.js.map": "/mbunity_contact_page/static/js/main.c9025ed9.js.map",
+    "266.288406cc.chunk.js.map": "/mbunity_contact_page/static/js/266.288406cc.chunk.js.map",
+    "753.6f63076a.chunk.js.map": "/mbunity_contact_page/static/js/753.6f63076a.chunk.js.map",
+    "250.34de7bcd.chunk.js.map": "/mbunity_contact_page/static/js/250.34de7bcd.chunk.js.map",
+    "10.a4ed97ff.chunk.js.map": "/mbunity_contact_page/static/js/10.a4ed97ff.chunk.js.map",
+    "964.a743b684.chunk.js.map": "/mbunity_contact_page/static/js/964.a743b684.chunk.js.map",
+    "663.f5905ce1.chunk.js.map": "/mbunity_contact_page/static/js/663.f5905ce1.chunk.js.map",
+    "922.994ebba0.chunk.js.map": "/mbunity_contact_page/static/js/922.994ebba0.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1e19d616.css",
-    "static/js/main.8cb9cd5f.js"
+    "static/js/main.c9025ed9.js"
   ]
 }
