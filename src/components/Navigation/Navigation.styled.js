@@ -53,6 +53,14 @@ export const NavItem = styled(NavLink)`
   &.active {
     font-family: "Roboto700";
   }
+
+  svg {
+    fill: #ffffff;
+    @media screen and (min-width: 1440px) {
+      fill: #000000;
+    }
+  }
+
   @media (min-width: 1440px) {
     font-size: 16px;
     line-height: 1.2;
@@ -150,7 +158,8 @@ export const CartLogo = styled(Cart)`
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+
   @media screen and (min-width: 1440px) {
-    stroke: #000000;
+    /* stroke: #000000; */
   }
 `;
