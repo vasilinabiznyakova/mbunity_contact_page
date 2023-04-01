@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/mbunity_contact_page/static/css/main.1e19d616.css",
-    "main.js": "/mbunity_contact_page/static/js/main.c9025ed9.js",
+    "main.js": "/mbunity_contact_page/static/js/main.10bc828c.js",
     "static/js/266.288406cc.chunk.js": "/mbunity_contact_page/static/js/266.288406cc.chunk.js",
     "static/js/753.6f63076a.chunk.js": "/mbunity_contact_page/static/js/753.6f63076a.chunk.js",
     "static/js/250.34de7bcd.chunk.js": "/mbunity_contact_page/static/js/250.34de7bcd.chunk.js",
@@ -24,7 +24,7 @@
     "static/media/twitter.svg": "/mbunity_contact_page/static/media/twitter.078cccb27f41d04f9b2ea9de4f2a35b9.svg",
     "static/media/phone_icon.svg": "/mbunity_contact_page/static/media/phone_icon.a1f0b1fd905e8383d0852ce7c1fcb07e.svg",
     "static/media/location.svg": "/mbunity_contact_page/static/media/location.6af55f03e4694d09f4b4b1db64096530.svg",
-    "static/media/cart.svg": "/mbunity_contact_page/static/media/cart.5d469f7852c045f7f1ed5cf592e8ced1.svg",
+    "static/media/cart.svg": "/mbunity_contact_page/static/media/cart.26aec4204e8c5207a379a011e319b00f.svg",
     "index.html": "/mbunity_contact_page/index.html",
     "static/media/radiochecked.svg": "/mbunity_contact_page/static/media/radiochecked.291136841f784778da13c10016f8aa66.svg",
     "static/media/arrow_desktop.svg": "/mbunity_contact_page/static/media/arrow_desktop.33aea1e1ac5c2e9eb87d7eabf3f4c311.svg",
@@ -38,7 +38,7 @@
     "static/media/ellipse_desk_big.svg": "/mbunity_contact_page/static/media/ellipse_desk_big.847378fbde4b6beea92111d9e20f55ed.svg",
     "static/media/ellipse_big.svg": "/mbunity_contact_page/static/media/ellipse_big.d06c7621c1e4b7baa8536b30dd63d91e.svg",
     "main.1e19d616.css.map": "/mbunity_contact_page/static/css/main.1e19d616.css.map",
-    "main.c9025ed9.js.map": "/mbunity_contact_page/static/js/main.c9025ed9.js.map",
+    "main.10bc828c.js.map": "/mbunity_contact_page/static/js/main.10bc828c.js.map",
     "266.288406cc.chunk.js.map": "/mbunity_contact_page/static/js/266.288406cc.chunk.js.map",
     "753.6f63076a.chunk.js.map": "/mbunity_contact_page/static/js/753.6f63076a.chunk.js.map",
     "250.34de7bcd.chunk.js.map": "/mbunity_contact_page/static/js/250.34de7bcd.chunk.js.map",
@@ -49,6 +49,6 @@
   },
   "entrypoints": [
     "static/css/main.1e19d616.css",
-    "static/js/main.c9025ed9.js"
+    "static/js/main.10bc828c.js"
   ]
 }
