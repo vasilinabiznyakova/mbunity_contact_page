@@ -20,7 +20,7 @@ export const Navigation = ({ isDesktop }) => {
     <Nav>
       <MenuList>
         <MenuItem>
-          <NavItem to="/home">Home</NavItem>
+          <NavItem to="/">Home</NavItem>
         </MenuItem>
         <MenuItem>
           <Wrapper>
@@ -39,7 +39,7 @@ export const Navigation = ({ isDesktop }) => {
           <NavItem to="/about">About</NavItem>
         </MenuItem>
         <MenuItem>
-          <NavItem to="/">Contact</NavItem>
+          <NavItem to="/contact">Contact</NavItem>
         </MenuItem>
       </MenuList>
 

@@ -1,5 +1,7 @@
+import { PagesPlug } from "../components/PagesPlug/PagesPlug";
+
 const About = () => {
-  return <p>Here will be content of About page</p>;
+  return <PagesPlug />;
 };
 
 export default About;

@@ -1,12 +1,7 @@
-import { Header } from "../components/Header/Header";
+import { PagesPlug } from "../components/PagesPlug/PagesPlug";
 
 const Home = () => {
-  return (
-    <>
-      <Header />
-      <p>here content of Home page will be </p>
-    </>
-  );
+  return <PagesPlug />;
 };
 
 export default Home;

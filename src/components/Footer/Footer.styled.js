@@ -1,14 +1,17 @@
 import styled from "styled-components";
 
-export const FooterWrapper = styled.footer`
+export const FooterWrapper = styled.div`
   background: #000000;
+
+`;
+
+export const ContentWrapper = styled.footer`
+  margin: 0 auto;
   padding: 20px 20px 50px;
-  &:first-child {
-    @media screen and (min-width: 1440px) {
-      margin-right: 0;
-    }
-  }
+  max-width: 360px;
+
   @media screen and (min-width: 1440px) {
+    max-width: 1440px;
     padding: 80px 80px 66px;
   }
 `;
@@ -64,10 +67,10 @@ export const LinksContainer = styled.div`
 `;
 
 export const DeskTopContainer = styled.div`
-@media screen and (min-width: 1440px) {
-  display: flex;}
+  @media screen and (min-width: 1440px) {
+    display: flex;
+  }
 `;
-
 
 export const WrapList = styled.div`
   margin-right: ${(props) => (props.title === "legal" ? "118px" : null)};

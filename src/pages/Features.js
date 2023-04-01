@@ -1,5 +1,7 @@
+import { PagesPlug } from "../components/PagesPlug/PagesPlug";
+
 const Features = () => {
-  return <p>Here will be content of Features page</p>;
+  return <PagesPlug/>
 };
 
 export default Features;

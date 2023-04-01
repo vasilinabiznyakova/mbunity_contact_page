@@ -1,5 +1,7 @@
+import { PagesPlug } from "../components/PagesPlug/PagesPlug";
+
 const Shop = () => {
-  return <p>Here will be content of Shop page</p>;
+  return <PagesPlug />;
 };
 
 export default Shop;

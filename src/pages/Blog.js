@@ -1,5 +1,7 @@
+import { PagesPlug } from "../components/PagesPlug/PagesPlug";
+
 const Blog = () => {
-  return <p>Here will be content of Blog page</p>;
+  return <PagesPlug />;
 };
 
 export default Blog;
