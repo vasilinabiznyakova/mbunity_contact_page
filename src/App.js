@@ -7,6 +7,8 @@ const Features = lazy(() => import("./pages/Features"));
 const Blog = lazy(() => import("./pages/Blog"));
 const Shop = lazy(() => import("./pages/Shop"));
 const About = lazy(() => import("./pages/About"));
+const User = lazy(() => import("./pages/User"));
+const Cart = lazy(() => import("./pages/Cart"));
 const Contact = lazy(() => import("./pages/Contact"));
 const NotFound = lazy(() => import("./pages/NotFound"));
 
@@ -21,8 +23,8 @@ export const App = () => {
           <Route path="/shop" element={<Shop />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/user" element={<p>content of user page</p>} />
-          <Route path="/cart" element={<p>content of cart page</p>} />
+          <Route path="/user" element={<User />} />
+          <Route path="/cart" element={<Cart />} />
         </Route>
         <Route path="*" element={<NotFound />} />
       </Routes>
