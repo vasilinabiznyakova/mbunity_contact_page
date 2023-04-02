@@ -17,9 +17,10 @@ export const FormTitle = styled.b`
 
 export const FormField = styled(Field)`
   width: 172px;
+  height: 39px;
   border: none;
   border-radius: 4px;
-  padding: 10px 0 10px 10px;
+  padding-left: 10px;
   background: #1a1a1a;
   font-family: "Poppins400";
   font-size: 11px;
@@ -40,10 +41,6 @@ export const FormField = styled(Field)`
     line-height: 1.5;
     color: #8d8d8d;
   }
-
-  @media screen and (min-width: 1440px) {
-    width: 172px;
-  }
 `;
 
 export const FormWrapper = styled(Form)`
@@ -59,7 +56,6 @@ export const FormWrapper = styled(Form)`
 
 export const SubscrBtn = styled.button`
   cursor: pointer;
-  padding: 10px 22px;
   border: none;
   width: 105px;
   height: 39px;
@@ -68,10 +64,6 @@ export const SubscrBtn = styled.button`
   font-size: 12px;
   line-height: 1.5;
   color: #ffffff;
-
-  @media screen and (min-width: 1440px) {
-    width: 105px;
-  }
 `;
 
 export const SubsrInfo = styled.p`

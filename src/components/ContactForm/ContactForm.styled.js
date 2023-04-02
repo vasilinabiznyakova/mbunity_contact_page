@@ -88,9 +88,6 @@ export const RadioWrapper = styled.div`
 export const Button = styled.button`
   cursor: pointer;
   margin-bottom: 64px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  text-align: center;
   width: 278px;
   height: 38px;
   background: #000000;
@@ -109,8 +106,6 @@ export const Button = styled.button`
     margin-left: auto;
     margin-bottom: 152px;
     font-size: 16px;
-    padding-top: 16px;
-    padding-bottom: 16px;
     border-radius: 5px;
     box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.12);
   }

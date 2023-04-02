@@ -1,19 +1,6 @@
-import userLogo from "../../img/header/user_mob.png";
-import userLogoDesktop from "../../img/header/user_desktop.png";
-
-import {
-  Nav,
-  MenuList,
-  MenuItem,
-  NavItem,
-  Select,
-  Option,
-  Wrapper,
-  UserIList,
-  UserIListItem,
-  UserImg,
-  CartLogo,
-} from "./Navigation.styled";
+import { CustomDropDown } from "../CustomDropDown/CustomDropDown";
+import { UserList } from "../UserList/UserList";
+import { Nav, MenuList, MenuItem, NavItem, Wrapper } from "./Navigation.styled";
 
 export const Navigation = ({ isDesktop }) => {
   return (
@@ -22,13 +9,9 @@ export const Navigation = ({ isDesktop }) => {
         <MenuItem>
           <NavItem to="/">Home</NavItem>
         </MenuItem>
-        <MenuItem>
-          <Wrapper>
-            <Select name="features" placeholder="Features">
-              <Option value="0">Features</Option>
-            </Select>
-          </Wrapper>
-        </MenuItem>
+        <Wrapper>
+          <CustomDropDown />
+        </Wrapper>
         <MenuItem>
           <NavItem to="/blog">Blog</NavItem>
         </MenuItem>
@@ -42,22 +25,7 @@ export const Navigation = ({ isDesktop }) => {
           <NavItem to="/contact">Contact</NavItem>
         </MenuItem>
       </MenuList>
-
-      <UserIList>
-        <UserIListItem>
-          <NavItem to="/user">
-            <UserImg
-              src={isDesktop ? userLogoDesktop : userLogo}
-              alt="user logo"
-            />
-          </NavItem>
-        </UserIListItem>
-        <UserIListItem>
-          <NavItem to="/cart">
-            <CartLogo />
-          </NavItem>
-        </UserIListItem>
-      </UserIList>
+      <UserList isDesktop={isDesktop} />
     </Nav>
   );
 };

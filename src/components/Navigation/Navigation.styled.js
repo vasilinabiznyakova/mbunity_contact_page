@@ -1,8 +1,5 @@
 import { NavLink } from "react-router-dom";
 import styled from "styled-components";
-import arrow from "../../img/header/arrow.svg";
-import arrow_desktop from "../../img/header/arrow_desktop.svg";
-import { ReactComponent as Cart } from "../../img/header/cart.svg";
 
 export const Nav = styled.nav`
   margin-top: 58px;
@@ -82,94 +79,9 @@ export const NavItem = styled(NavLink)`
   }
 `;
 
-export const Select = styled.select`
-  cursor: pointer;
-  width: 70px;
-  height: 16px;
-  appearance: none;
-  -webkit-appearance: none;
-  border: none;
-  font-family: "Roboto400";
-  font-size: 14px;
-  line-height: 1.1;
-  background-color: inherit;
-  color: #ffffff;
-  @media screen and (min-width: 1440px) {
-    width: 76px;
-    height: 20px;
-    font-size: 16px;
-    line-height: 1.2;
-    color: #1f1f1f;
-  }
-`;
-
-export const Option = styled.option`
-  padding: 0;
-`;
-
-export const Wrapper = styled.div`
+export const Wrapper = styled.li`
   position: relative;
   @media screen and (min-width: 1440px) {
-    padding-right: 8px;
+    margin-right: 46px;
   }
-  &::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    pointer-events: none;
-    background-image: url(${arrow});
-    background-repeat: no-repeat;
-    background-position: 60px 50%;
-    @media screen and (min-width: 1440px) {
-      background-position: 70px;
-      background-image: url(${arrow_desktop});
-    }
-  }
-`;
-
-export const UserIList = styled.ul`
-  display: flex;
-  justify-content: center;
-
-  @media screen and (min-width: 1440px) {
-    margin: 0;
-  }
-`;
-
-export const UserIListItem = styled.li`
-  position: relative;
-  width: 30px;
-  height: 30px;
-  border: 1px solid #ffffff;
-  border-radius: 15px;
-  transition: background-color, 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  &:first-child {
-    margin-right: 36px;
-  }
-  :hover,
-  :focus {
-    background-color: grey;
-  }
-  @media screen and (min-width: 1440px) {
-    border-color: #000000;
-  }
-`;
-
-export const UserImg = styled.img`
-  width: 16px;
-  height: 18px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-`;
-
-export const CartLogo = styled(Cart)`
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 `;
