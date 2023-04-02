@@ -12,7 +12,7 @@ export const GeneralInquiryList = () => {
   return (
     <List>
       <GeneralInquiryListItem>
-        <InquiryLink href="tel:+1012 3456 789">
+        <InquiryLink href="tel:+10123456789">
           <PhoneIcon />
           <InquiryDescr>+1012 3456 789</InquiryDescr>
         </InquiryLink>

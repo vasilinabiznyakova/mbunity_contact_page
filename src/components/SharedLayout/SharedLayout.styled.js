@@ -7,3 +7,11 @@ export const Container = styled.div`
     max-width: 1440px;
   }
 `;
+
+export const Loader = styled.div`
+  height: 524px;
+
+  @media screen and (min-width: 1440px) {
+    height: 394px;
+  }
+`;
