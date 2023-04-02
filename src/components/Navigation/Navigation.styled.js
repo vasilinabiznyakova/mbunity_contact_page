@@ -6,7 +6,6 @@ import { ReactComponent as Cart } from "../../img/header/cart.svg";
 
 export const Nav = styled.nav`
   margin-top: 58px;
-  height: 100vh;
 
   @media screen and (min-width: 1440px) {
     align-items: center;
@@ -18,6 +17,7 @@ export const Nav = styled.nav`
 
 export const MenuList = styled.ul`
   margin-bottom: 60px;
+  border-bottom: none;
 
   @media screen and (min-width: 1440px) {
     display: flex;
@@ -32,6 +32,13 @@ export const MenuItem = styled.li`
   &:not(:last-child) {
     margin-bottom: 30px;
   }
+  a:hover {
+    border-bottom: 2px solid #ffffff;
+
+    @media screen and (min-width: 1440px) {
+      border-bottom: 2px solid #000000;
+    }
+  }
 
   @media screen and (min-width: 1440px) {
     padding-left: 0;
@@ -39,6 +46,10 @@ export const MenuItem = styled.li`
     &:not(:last-child) {
       margin-bottom: 0;
       margin-right: 46px;
+    }
+
+    a:hover {
+      border-bottom: 2px solid #000000;
     }
   }
 `;
@@ -121,8 +132,7 @@ export const Wrapper = styled.div`
 
 export const UserIList = styled.ul`
   display: flex;
-  margin: 0 112px;
-  justify-content: space-between;
+  justify-content: center;
 
   @media screen and (min-width: 1440px) {
     margin: 0;
@@ -135,11 +145,15 @@ export const UserIListItem = styled.li`
   height: 30px;
   border: 1px solid #ffffff;
   border-radius: 15px;
+  transition: background-color, 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:first-child {
+    margin-right: 36px;
+  }
+  :hover,
+  :focus {
+    background-color: grey;
+  }
   @media screen and (min-width: 1440px) {
-    &:first-child {
-      margin-right: 36px;
-    }
-    margin-right: 0;
     border-color: #000000;
   }
 `;
@@ -158,8 +172,4 @@ export const CartLogo = styled(Cart)`
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-
-  @media screen and (min-width: 1440px) {
-    /* stroke: #000000; */
-  }
 `;

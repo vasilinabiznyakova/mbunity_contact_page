@@ -1,4 +1,4 @@
-import userLogo from "../../img/header/user.png";
+import userLogo from "../../img/header/user_mob.png";
 import userLogoDesktop from "../../img/header/user_desktop.png";
 
 import {

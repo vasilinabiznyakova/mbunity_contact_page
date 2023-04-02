@@ -26,12 +26,13 @@ export const GeneralSocialListLink = styled.a`
   svg {
     fill: #ffffff;
   }
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color, 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover,
   &:focus {
     background-color: #ffffff;
     svg {
+      transition: fill, 250ms cubic-bezier(0.4, 0, 0.2, 1);
       fill: #000000;
     }
   }
