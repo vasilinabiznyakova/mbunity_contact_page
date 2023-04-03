@@ -12,7 +12,6 @@ export const DropdownTitle = styled.span`
   display: inline-block;
   cursor: pointer;
   padding-right: 20px;
-  margin-bottom: ${(props) => (props.open ? "4px" : "0px")};
   font-family: "Roboto400";
   text-decoration: none;
   font-size: 14px;
@@ -78,5 +77,11 @@ export const MenuItem = styled.li`
     @media screen and (min-width: 1440px) {
       border-bottom: 2px solid #000000;
     }
+  }
+`;
+
+export const MenuList = styled.ul`
+  @media screen and (min-width: 1440px) {
+    position: absolute;
   }
 `;

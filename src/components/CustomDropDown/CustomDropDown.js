@@ -4,6 +4,7 @@ import {
   NavItem,
   MenuItem,
   DropdownTitle,
+  MenuList,
 } from "./CustomDropDown.styled";
 import { useState } from "react";
 
@@ -19,13 +20,13 @@ export const CustomDropDown = () => {
       </DropdownTitle>
       {open && (
         <NavWraper open={open}>
-          <ul>
+          <MenuList>
             {menus.map((item) => (
               <MenuItem key={nanoid()}>
                 <NavItem to="/features">{item}</NavItem>
               </MenuItem>
             ))}
-          </ul>
+          </MenuList>
         </NavWraper>
       )}
     </>

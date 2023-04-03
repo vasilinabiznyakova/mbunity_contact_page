@@ -81,7 +81,9 @@ export const NavItem = styled(NavLink)`
 
 export const Wrapper = styled.li`
   position: relative;
+  margin-bottom: 30px;
   @media screen and (min-width: 1440px) {
+    margin-bottom: 0;
     margin-right: 46px;
   }
 `;
