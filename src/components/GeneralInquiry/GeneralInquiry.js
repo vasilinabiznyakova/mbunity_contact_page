@@ -6,8 +6,9 @@ import {
 } from "./GeneralInquiry.styled";
 
 import { SocialList } from "../SocialList/SocialList";
-import { GeneralInquiryList } from "../GeneralInquiryList/GeneralInquiryList";
 import { ContactForm } from "../ContactForm/ContactForm";
+import { ContactsList } from "../ContactsList/ContactsList";
+import { contactsInfo } from "../../data/contactsInfo";
 
 export const GeneralInquiry = () => {
   return (
@@ -15,7 +16,7 @@ export const GeneralInquiry = () => {
       <Wrapper>
         <InquiryTitle>Contact Information</InquiryTitle>
         <InquiryText>Say something to start a live chat!</InquiryText>
-        <GeneralInquiryList />
+        <ContactsList content={contactsInfo} />
         <SocialList />
       </Wrapper>
       <ContactForm />

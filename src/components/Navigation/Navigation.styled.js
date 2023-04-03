@@ -18,6 +18,7 @@ export const MenuList = styled.ul`
 
   @media screen and (min-width: 1440px) {
     display: flex;
+    align-items: center;
     margin-bottom: 0;
     margin-right: 60px;
   }
@@ -82,8 +83,11 @@ export const NavItem = styled(NavLink)`
 export const Wrapper = styled.li`
   position: relative;
   margin-bottom: 30px;
+  padding-left: 4px;
+
   @media screen and (min-width: 1440px) {
     margin-bottom: 0;
     margin-right: 46px;
+    padding-left: 0;
   }
 `;

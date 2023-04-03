@@ -12,11 +12,13 @@ import { FooterList } from "../FooterList/FooterList";
 import { SubscriptionForm } from "../SubscriptionForm/SubscriptionForm";
 import { company, legal, quickLinks, reachUs } from "../../data/footer";
 
+
 export const Footer = () => {
   return (
     <FooterWrapper>
       <ContentWrapper>
         <FooterLogo href="/">Logo Here</FooterLogo>
+       
         <DeskTopContainer>
           <LinksContainer>
             <FlexWrap>

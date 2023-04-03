@@ -2,8 +2,6 @@ import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 import { ReactComponent as Cart } from "../../img/header/cart.svg";
 
-
-
 export const NavItem = styled(NavLink)`
   font-family: "Roboto400";
   text-decoration: none;
@@ -32,7 +30,6 @@ export const NavItem = styled(NavLink)`
   }
 `;
 
-
 export const UserIList = styled.ul`
   display: flex;
   justify-content: center;
@@ -54,7 +51,10 @@ export const UserIListItem = styled.li`
   }
   :hover,
   :focus {
-    background-color: grey;
+    background-color: #333;
+    @media screen and (min-width: 1440px) {
+      background-color: #d3d3d3;
+    }
   }
   @media screen and (min-width: 1440px) {
     border-color: #000000;
