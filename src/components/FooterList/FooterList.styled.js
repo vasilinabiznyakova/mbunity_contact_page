@@ -14,6 +14,10 @@ export const IconWrapper = styled.span`
 `;
 
 export const ListItem = styled.li`
+  a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+  }
   &:not(:last-child) {
     margin-bottom: 20px;
     @media screen and (min-width: 1440px) {
@@ -29,10 +33,7 @@ export const LinkEl = styled(Link)`
   font-size: 12px;
   line-height: 1.5;
   color: #ffffff;
-  :hover,
-  :focus {
-    border-bottom: 2px solid #ffffff;
+  @media screen and (min-width: 1440px) {
+    font-size: 16px;
   }
-
-
 `;

@@ -1,16 +1,16 @@
 import { IconsGenerator } from "../IconsGenerator/IconsGenerator";
 import { List, ListItem, Info, Link, Icon } from "./ContactsList.styled";
 
-export const ContactsList = ({ content }) => {
+export const ContactsList = ({ content, location }) => {
   return (
-    <List>
+    <List location={location}>
       {content.map((el) => (
-        <ListItem key={el.id}>
+        <ListItem key={el.id} location={location}>
           <Link href={el.link}>
-            <Icon>
+            <Icon location={location}>
               <IconsGenerator id={el.icon} />
             </Icon>
-            <Info>{el.description}</Info>
+            <Info location={location}>{el.description}</Info>
           </Link>
         </ListItem>
       ))}

@@ -1,17 +1,9 @@
 import styled from "styled-components";
 
-export const FooterWrapper = styled.div`
+export const FooterWrapper = styled.footer`
   background: #000000;
-
-`;
-
-export const ContentWrapper = styled.footer`
-  margin: 0 auto;
-  padding: 20px 20px 50px;
-  max-width: 360px;
-
+  padding: 20px 20px 30px 20px;
   @media screen and (min-width: 1440px) {
-    max-width: 1440px;
     padding: 80px 80px 66px;
   }
 `;
@@ -45,36 +37,19 @@ export const FooterLogo = styled.a`
   }
 `;
 
-export const FlexWrap = styled.div`
+export const ContentWrap = styled.div`
+  @media screen and (min-width: 1440px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+`;
+
+export const ListsWrap = styled.div`
   display: flex;
-  justify-content: space-between;
-  &:first-child {
-    margin-bottom: 30px;
-  }
-
+  flex-wrap: wrap;
+  margin-bottom: 30px;
   @media screen and (min-width: 1440px) {
-    justify-content: flex-start;
-    &:last-child {
-      margin-right: 96;
-    }
-  }
-`;
-
-export const LinksContainer = styled.div`
-  @media screen and (min-width: 1440px) {
-    display: flex;
-  }
-`;
-
-export const DeskTopContainer = styled.div`
-  @media screen and (min-width: 1440px) {
-    display: flex;
-  }
-`;
-
-export const WrapList = styled.div`
-  margin-right: ${(props) => (props.title === "legal" ? "118px" : null)};
-  @media screen and (min-width: 1440px) {
-    margin-right: 0;
+    margin-bottom: 0;
+    margin-right: 96px;
   }
 `;

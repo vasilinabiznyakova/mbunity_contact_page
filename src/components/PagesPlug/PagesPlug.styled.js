@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { NavLink } from "react-router-dom";
 
 export const HomeSubtitle = styled.p`
+
   font-family: "Inter800";
   margin-bottom: 20px;
   font-size: 31px;
@@ -23,9 +24,9 @@ export const Subtitle = styled.p`
   font-size: 16px;
   line-height: 26px;
   margin-bottom: 40px;
+  text-align: center;
 
   @media screen and (min-width: 1440px) {
-    text-align: center;
     font-size: 24px;
     line-height: 38px;
   }
@@ -37,6 +38,8 @@ export const Orange = styled.strong`
 
 export const Wrapper = styled.div`
   padding-top: 40px;
+  padding-left: 10px;
+  padding-right: 10px;
 `;
 
 export const TextMessage = styled.p`
