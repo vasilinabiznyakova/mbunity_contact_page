@@ -81,6 +81,8 @@ export const MenuItem = styled.li`
 `;
 
 export const MenuList = styled.ul`
+  margin-top: 10px;
+
   @media screen and (min-width: 1440px) {
     position: absolute;
   }
