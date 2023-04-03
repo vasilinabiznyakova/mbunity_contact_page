@@ -41,6 +41,7 @@ export const ContentWrap = styled.div`
   @media screen and (min-width: 1440px) {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
   }
 `;
 
@@ -50,6 +51,5 @@ export const ListsWrap = styled.div`
   margin-bottom: 30px;
   @media screen and (min-width: 1440px) {
     margin-bottom: 0;
-    margin-right: 96px;
   }
 `;
