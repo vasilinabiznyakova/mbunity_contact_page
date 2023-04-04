@@ -13,7 +13,6 @@ export const Article = styled.article`
   border-radius: 5px;
 
   @media screen and (min-width: 1440px) {
-    max-width: 1440px;
     display: flex;
     padding: 10px 50px 10px 10px;
     margin-left: auto;
@@ -23,7 +22,7 @@ export const Article = styled.article`
   &::after {
     content: "";
     position: absolute;
-    left: calc(50% - 62px);
+    left: 62px;
     bottom: 0;
     width: 104px;
     height: 56px;

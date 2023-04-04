@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 
 export const HeaderEl = styled.header`
-  padding: 28px 20px 30px;
+  padding: 28px 20px 28px;
   box-shadow: 0px -2px 4px rgba(0, 0, 0, 0.25);
   background: ${(props) => (props.navbarOpen ? "#000000" : "#F5F5F5")};
 

@@ -1,6 +1,8 @@
 import styled from "styled-components";
 
 export const BurgerBtn = styled.button`
+  width: 24px;
+  height: 24px;
   cursor: pointer;
   padding: 0;
   border: none;

@@ -42,13 +42,14 @@ export const ContentWrap = styled.div`
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-left: 20px;
   }
 `;
 
 export const ListsWrap = styled.div`
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
   @media screen and (min-width: 1440px) {
     margin-bottom: 0;
   }

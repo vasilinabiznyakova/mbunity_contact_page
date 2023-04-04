@@ -2,11 +2,14 @@ import styled from "styled-components";
 
 export const List = styled.ul`
   margin-bottom: ${(props) => (props.location === "footer" ? 0 : "58px")};
+  @media screen and (min-width: 1440px) {
+    margin-bottom: ${(props) => props.location !== "footer" && "159px"};
+  }
 `;
 
 export const ListItem = styled.li`
   &:not(:last-child) {
-    margin-bottom: 16px;
+    margin-bottom: 15px;
 
     @media screen and (min-width: 1440px) {
       margin-bottom: ${(props) =>

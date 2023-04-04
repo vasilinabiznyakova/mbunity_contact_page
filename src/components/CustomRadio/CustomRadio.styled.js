@@ -11,9 +11,9 @@ export const RadioLabel = styled.label`
   font-size: 12px;
   line-height: 1.67;
   color: #000000;
-  &:not(:last-child) {
+  /* &:not(:last-child) {
     margin-right: 20px;
-  }
+  } */
   &:before {
     content: "";
     display: inline-block;

@@ -1,11 +1,17 @@
 import styled from "styled-components";
 import { Field, Form } from "formik";
 
-
-
 export const Label = styled.label`
   display: block;
-  margin-bottom: 20px;
+  max-height: 55px;
+  &:not(:last-child) {
+    margin-bottom: 25px;
+
+    @media screen and (min-width: 1440px) {
+      margin-bottom: 0;
+    }
+  }
+
   @media screen and (min-width: 1440px) {
     margin-bottom: 0;
   }
@@ -26,8 +32,8 @@ export const FormWrapper = styled(Form)`
   margin-left: auto;
   margin-right: auto;
 
-
   @media screen and (min-width: 1440px) {
+    padding-top: 50px;
     width: auto;
     padding-right: 0;
     padding-left: 0;
@@ -38,7 +44,7 @@ export const FormField = styled(Field)`
   display: block;
   width: 100%;
   padding-top: 4px;
-  padding-bottom: 12px;
+  padding-bottom: 11px;
   border: none;
   border-bottom: 2px solid #8d8d8d;
   font-family: "Poppins500";
@@ -48,7 +54,7 @@ export const FormField = styled(Field)`
   margin-bottom: ${(props) => (props.name === "message" ? "26px" : "0")};
 
   @media screen and (min-width: 1440px) {
-    margin-bottom: ${(props) => (props.name === "message" ? "46px" : "0")};
+    margin-bottom: 0;
   }
 
   &:active,
@@ -74,14 +80,24 @@ export const RadioTitle = styled.p`
   font-size: 14px;
   line-height: 1.43;
   color: #000000;
+
+  @media screen and (min-width: 1440px) {
+    margin-bottom: 14px;
+  }
 `;
 
 export const RadioWrapper = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  margin-bottom: 26px;
+  display: grid;
+  grid-template-columns: repeat(2, 115px);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 14px;
+  margin-bottom: 25px;
+
   @media screen and (min-width: 1440px) {
-    margin-bottom: 46px;
+    grid-template-columns: repeat(4, 115px);
+    grid-template-rows: repeat(1, 1fr);
+    margin-bottom: 45px;
   }
 `;
 
@@ -100,6 +116,7 @@ export const Button = styled.button`
   color: #ffffff;
 
   @media screen and (min-width: 1440px) {
+    margin-top: 45px;
     width: 214px;
     height: 54px;
     display: block;
@@ -112,14 +129,16 @@ export const Button = styled.button`
 `;
 
 export const InputWrapper = styled.div`
+  margin-top: 10px;
+  margin-bottom: 25px;
+
   @media screen and (min-width: 1440px) {
     display: grid;
     grid-template-columns: repeat(2, 278px);
     grid-template-rows: repeat(2);
     grid-column-gap: 40px;
     grid-row-gap: 46px;
-    margin-bottom: 46px;
+    margin-bottom: 45px;
+    margin-top: 0;
   }
 `;
-
-export const FormArticle = styled.article``;

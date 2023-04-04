@@ -12,7 +12,7 @@ import {
   RadioWrapper,
   Button,
   InputWrapper,
-  FormArticle,
+
 } from "./ContactForm.styled";
 
 const initialValues = {
@@ -30,7 +30,7 @@ export const ContactForm = () => {
   };
 
   return (
-    <FormArticle>
+    <article>
       <Formik
         initialValues={initialValues}
         onSubmit={handleSubmit}
@@ -90,6 +90,6 @@ export const ContactForm = () => {
           </FormWrapper>
         )}
       </Formik>
-    </FormArticle>
+    </article>
   );
 };

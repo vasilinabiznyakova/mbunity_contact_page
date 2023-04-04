@@ -10,6 +10,5 @@ export const SubscribtionFormSchema = yup.object().shape({
     .max(63, "Your email should be less than 63 digits")
     .email("Please enter a valid email")
     .matches(emailRules, "Please enter a valid email")
-    .matches(emailRules2, "Please enter a valid email")
-    .required("Email is required"),
+    .matches(emailRules2, "Please enter a valid email"),
 });
