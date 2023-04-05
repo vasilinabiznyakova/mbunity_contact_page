@@ -7,17 +7,13 @@ export const FooterWrapper = styled.footer`
     padding: 80px 80px 66px;
   }
 `;
-
-export const FooterLogo = styled.a`
+export const LogoWrapper = styled.div`
   position: relative;
-  text-decoration: none;
+  max-width: 360px;
+  margin: 0 auto;
+  text-align: center;
   display: block;
   margin-bottom: 50px;
-  font-family: "Inter800";
-  text-align: center;
-  font-size: 36px;
-  line-height: 1.22;
-  color: #ffffff;
 
   &::after {
     content: "";
@@ -27,14 +23,26 @@ export const FooterLogo = styled.a`
     width: 100%;
     background: white;
     transform: translateY(20px);
+
     @media screen and (min-width: 1440px) {
       transform: translateY(45px);
     }
   }
-
   @media screen and (min-width: 1440px) {
     margin-bottom: 75px;
+    max-width: 1440px;
   }
+`;
+
+export const FooterLogo = styled.a`
+
+  text-decoration: none;
+
+  font-family: "Inter800";
+  text-align: center;
+  font-size: 36px;
+  line-height: 1.22;
+  color: #ffffff; 
 `;
 
 export const ContentWrap = styled.div`
@@ -42,10 +50,11 @@ export const ContentWrap = styled.div`
   margin: 0 auto;
 
   @media screen and (min-width: 1440px) {
+    max-width: 1440px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-left: 20px;
+    padding-left: 20px;
   }
 `;
 

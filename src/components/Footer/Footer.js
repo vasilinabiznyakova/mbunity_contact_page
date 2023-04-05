@@ -3,6 +3,7 @@ import {
   FooterLogo,
   ListsWrap,
   ContentWrap,
+  LogoWrapper,
 } from "../Footer/Footer.styled";
 import { FooterList } from "../FooterList/FooterList";
 import { SubscriptionForm } from "../SubscriptionForm/SubscriptionForm";
@@ -14,7 +15,9 @@ import { FooterListContainer } from "../FooterListContainer/FooterListContainer"
 export const Footer = () => {
   return (
     <FooterWrapper>
-      <FooterLogo href="/">Logo Here</FooterLogo>
+      <LogoWrapper>
+        <FooterLogo href="/">Logo Here</FooterLogo>
+      </LogoWrapper>
 
       <ContentWrap>
         <ListsWrap>
