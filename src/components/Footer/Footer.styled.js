@@ -38,6 +38,9 @@ export const FooterLogo = styled.a`
 `;
 
 export const ContentWrap = styled.div`
+  max-width: 360px;
+  margin: 0 auto;
+
   @media screen and (min-width: 1440px) {
     display: flex;
     flex-wrap: wrap;

@@ -14,7 +14,7 @@ export const ListWrapper = styled.div`
   margin-bottom: ${(props) => props.title === "Reach us" && "30px"};
   margin-right: ${(props) => props.title === "Legal" && "118px"};
 
-  @media screen and (min-width: 361px) {
+  @media screen and (min-width: 1440px) {
     margin-right: ${(props) => props.title === "Reach us" && "48px"};
     margin-right: ${(props) => props.title === "Company" && "60px"};
     margin-right: ${(props) => props.title === "Legal" && "60px"};
